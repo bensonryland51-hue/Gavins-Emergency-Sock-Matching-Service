@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="t">
+  <title id="t">Gavin's Emergency Sock Matching Service logo</title>
+  <rect width="64" height="64" rx="14" fill="#c8102e"/>
+  <path d="M22 10h14v24c0 3 1 5 4 6l6 3c4 2 5 7 3 10-2 4-6 5-10 3l-13-6c-3-1-4-4-4-7z" fill="#fff"/>
+  <path d="M22 10h14v6H22z" fill="#0f2240"/>
+  <path d="M22 20h14M22 25h14" stroke="#c8102e" stroke-width="2"/>
+  <path d="M44 18v8M40 22h8" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+</svg>
