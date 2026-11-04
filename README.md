@@ -11,9 +11,9 @@ Plain HTML and CSS with a small script. No build step, no dependencies, no analy
 | --- | --- |
 | `index.html` | The whole site (hero, how it works, pricing, testimonials, Meet Gavin, FAQ, hotline, footer) |
 | `styles.css` | All styling. Colours are CSS variables at the top (`--red`, `--navy`, …) |
-| `script.js` | Pricing pop-up ("Gavin has been notified") and the fake report form. Sends nothing anywhere |
+| `script.js` | Threat-level button, sock panel buttons, pricing pop-up, fake report form, and the secret sock-matching game (socks scattered in section margins; `SOCK_TYPES` lists the pairs). Sends nothing anywhere |
 | `404.html` | "This sock has gone missing" page, served by GitHub Pages for unknown paths |
-| `images/` | `logo.svg`, `favicon.svg`, `gavin.svg` (cartoon silhouette), `og-image.svg` + `og-image.png` (link preview), `apple-touch-icon.png` |
+| `images/` | `gavin-van.webp` / `gavin-van-800.webp` / `gavin-van.jpg` (hero artwork), `og-image.jpg` (1200×630 link preview), `logo.svg`, `favicon.svg`, `gavin.svg` (cartoon silhouette), `apple-touch-icon.png` |
 | `robots.txt` | Allows all crawlers |
 | `CNAME` | The custom domain for GitHub Pages. **Do not delete or edit it** |
 
@@ -27,7 +27,7 @@ Plain HTML and CSS with a small script. No build step, no dependencies, no analy
    # open http://localhost:8000
    ```
 
-3. If you change `images/og-image.svg`, re-export it as a 1200×630 `images/og-image.png`
+3. Keep images small (WebP/JPEG, under ~200 KB). The link preview `images/og-image.jpg` must stay 1200×630
    (social apps don't accept SVG preview images).
 
 Keep it clearly a parody: no real phone numbers, no payment buttons, no real personal details about Gavin,

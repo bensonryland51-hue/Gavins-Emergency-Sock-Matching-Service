@@ -2,23 +2,23 @@
   <title id="gt">Cartoon silhouette of Gavin</title>
   <desc id="gd">A featureless navy silhouette of a man in a hard hat holding a magnifying glass up to a single striped sock.</desc>
   <circle cx="160" cy="160" r="156" fill="#eef2f7"/>
-  <circle cx="160" cy="160" r="156" fill="none" stroke="#c8102e" stroke-width="6" stroke-dasharray="14 10"/>
+  <circle cx="160" cy="160" r="156" fill="none" stroke="#d7192d" stroke-width="6" stroke-dasharray="14 10"/>
   <!-- body -->
-  <path d="M70 300c4-62 40-96 90-96s86 34 90 96z" fill="#0f2240"/>
+  <path d="M70 300c4-62 40-96 90-96s86 34 90 96z" fill="#0d2a5c"/>
   <!-- hi-vis-ish sash (red, not real service livery) -->
-  <path d="M112 214l96 86h-26l-88-78z" fill="#c8102e"/>
+  <path d="M112 214l96 86h-26l-88-78z" fill="#d7192d"/>
   <!-- head -->
-  <circle cx="160" cy="140" r="46" fill="#0f2240"/>
+  <circle cx="160" cy="140" r="46" fill="#0d2a5c"/>
   <!-- hard hat -->
-  <path d="M110 128c0-34 22-54 50-54s50 20 50 54z" fill="#c8102e"/>
-  <rect x="100" y="124" width="120" height="12" rx="6" fill="#a00d25"/>
+  <path d="M110 128c0-34 22-54 50-54s50 20 50 54z" fill="#d7192d"/>
+  <rect x="100" y="124" width="120" height="12" rx="6" fill="#a8101f"/>
   <text x="160" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="#fff">G</text>
   <!-- magnifier arm -->
-  <path d="M220 236l30-44" stroke="#0f2240" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="258" cy="168" r="26" fill="#ffffff" fill-opacity=".55" stroke="#0f2240" stroke-width="7"/>
+  <path d="M220 236l30-44" stroke="#0d2a5c" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="258" cy="168" r="26" fill="#ffffff" fill-opacity=".55" stroke="#0d2a5c" stroke-width="7"/>
   <!-- sock under inspection -->
   <g transform="translate(244 146) rotate(12)">
-    <path d="M0 0h18v26c0 3 2 5 5 6l5 2c4 2 5 6 3 9s-6 4-9 2l-14-7c-5-2-8-6-8-11z" fill="#fff" stroke="#0f2240" stroke-width="2"/>
-    <path d="M0 7h18M0 13h18" stroke="#c8102e" stroke-width="3"/>
+    <path d="M0 0h18v26c0 3 2 5 5 6l5 2c4 2 5 6 3 9s-6 4-9 2l-14-7c-5-2-8-6-8-11z" fill="#fff" stroke="#0d2a5c" stroke-width="2"/>
+    <path d="M0 7h18M0 13h18" stroke="#d7192d" stroke-width="3"/>
   </g>
 </svg>

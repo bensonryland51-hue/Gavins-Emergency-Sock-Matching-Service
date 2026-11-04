@@ -6,17 +6,17 @@
   <title>Gavin's Emergency Sock Matching Service — Lost a sock? Every second counts.</title>
   <meta name="description" content="24/7 rapid-response hosiery reunification. Gavin's Emergency Sock Matching Service is a parody. It is not a real business. No socks will be matched.">
   <link rel="canonical" href="https://gavins-emergency-sock-matching-service.com/">
-  <meta name="theme-color" content="#0f2240">
+  <meta name="theme-color" content="#0d2a5c">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Gavin's Emergency Sock Matching Service">
   <meta property="og:title" content="Lost a sock? Every second counts.">
   <meta property="og:description" content="Gavin's Emergency Sock Matching Service — 24/7 rapid-response hosiery reunification. (A parody. No socks will be matched.)">
   <meta property="og:url" content="https://gavins-emergency-sock-matching-service.com/">
-  <meta property="og:image" content="https://gavins-emergency-sock-matching-service.com/images/og-image.png">
+  <meta property="og:image" content="https://gavins-emergency-sock-matching-service.com/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Lost a sock? Every second counts. Gavin's Emergency Sock Matching Service.">
+  <meta property="og:image:alt" content="Illustrated advert of Gavin leaning out of a sock-covered van holding a pair of socks, with the slogan We come to you.">
   <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
@@ -27,9 +27,25 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="pat-stripes" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#fff"/><rect y="5" width="10" height="5" fill="#d7192d"/></pattern>
+      <pattern id="pat-dots" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#0d2a5c"/><circle cx="5" cy="5" r="2.2" fill="#fff"/></pattern>
+      <pattern id="pat-argyle" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#ffe9a8"/><path d="M8 0l8 8-8 8-8-8z" fill="#d7192d"/><path d="M0 0l16 16M16 0L0 16" stroke="#0d2a5c" stroke-width="1"/></pattern>
+      <pattern id="pat-rainbow" width="10" height="24" patternUnits="userSpaceOnUse"><rect width="10" height="4" fill="#e63946"/><rect y="4" width="10" height="4" fill="#f4a261"/><rect y="8" width="10" height="4" fill="#e9c46a"/><rect y="12" width="10" height="4" fill="#2a9d8f"/><rect y="16" width="10" height="4" fill="#457b9d"/><rect y="20" width="10" height="4" fill="#6d4c8d"/></pattern>
+      <pattern id="pat-festive" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#1f7a4d"/><path d="M6 2v8M2 6h8M3 3l6 6M9 3l-6 6" stroke="#fff" stroke-width="1"/></pattern>
+      <g id="sock-shape">
+        <path d="M10 2H28V31C28 34 30 36 33 37L40 40C45 42 47 49 44 53C41 58 35 59 30 57L13 50C7 48 4 43 4 37V8C4 5 7 2 10 2Z" stroke="#0d2a5c" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M5 4H27V11H5Z" fill="#fff" fill-opacity=".45"/>
+      </g>
+    </defs>
+  </svg>
+
   <div class="alert-bar" role="note">
     <span class="alert-dot" aria-hidden="true"></span>
-    Current sock threat level: <strong>ELEVATED</strong> — laundry day is approaching.
+    Current sock threat level:
+    <button class="threat-btn" type="button" id="threat-btn" aria-describedby="threat-desc">ELEVATED</button>
+    <span id="threat-desc">— laundry day is approaching.</span>
   </div>
 
   <header class="site-header">
@@ -54,19 +70,36 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">24/7 · 365 · Including bank holidays</p>
+          <p class="lockup">
+            <span class="lockup-name">Gavin's</span>
+            <span class="lockup-red">Emergency</span>
+            <span class="lockup-yellow">Pairing Response Team</span>
+            <span class="lockup-ribbon">We come to you.</span>
+          </p>
           <h1 id="hero-title">Lost a sock? <span>Every second counts.</span></h1>
-          <p class="lede">Gavin's Emergency Sock Matching Service — 24/7 rapid-response hosiery reunification.</p>
+          <p class="lede">24/7 rapid-response hosiery reunification. <span class="scribble">Same-day sock pairing. 5-star service, questionable methods.</span></p>
           <a class="btn btn-emergency" href="#hotline">Report a sock emergency</a>
-          <ul class="badges" aria-label="Accreditations">
-            <li>As seen on absolutely no TV</li>
-            <li>ISO 9001-ish certified</li>
-            <li>Trusted by at least one household</li>
-          </ul>
+          <p class="hero-hint">Psst. Several socks have escaped onto this page. Reunite the pairs.</p>
         </div>
-        <div class="hero-art">
-          <img src="/images/gavin.svg" alt="Cartoon silhouette of Gavin in a red hard hat, inspecting a lone sock through a magnifying glass" width="320" height="320">
-        </div>
+        <figure class="hero-photo">
+          <div class="sunburst" aria-hidden="true"></div>
+          <picture>
+            <source type="image/webp" srcset="/images/gavin-van-800.webp 800w, /images/gavin-van.webp 1400w" sizes="(max-width: 760px) 92vw, 600px">
+            <img src="/images/gavin-van.jpg" width="1200" height="698" fetchpriority="high"
+              alt="Illustrated advert: Gavin leans out of a sock-covered emergency van, grinning and holding up a pair of grey socks. Beside him, a laundry basket overflows with socks under a sign reading Lonely socks welcome here.">
+          </picture>
+          <figcaption class="sticker">Lonely socks find their people here!</figcaption>
+        </figure>
+      </div>
+      <div class="container">
+        <ul class="badges" aria-label="Service promises">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></svg>At your doorstep</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M12 7v5l3 3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>Same-day service</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M14.5 14.5L21 21" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>Missing sock investigations</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9h20l-2 12H4zM7 9l4-6M17 9l-4-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>All laundry crises welcome</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7h7l-5.6 4.4L18.5 21 12 16.6 5.5 21l2.1-7.6L2 9h7z"/></svg>5-star service*</li>
+        </ul>
+        <p class="badge-footnote">*Stars self-awarded. As seen on absolutely no TV. ISO 9001-ish certified.</p>
       </div>
     </section>
 
@@ -81,27 +114,51 @@
       </div>
     </section>
 
+    <section id="panel" class="section section-panel" aria-labelledby="panel-title">
+      <div class="container">
+        <p class="section-kicker">Self-service sock support</p>
+        <h2 id="panel-title">Not ready to report? Press a sock.</h2>
+        <p class="panel-lede">Our award-adjacent sock buttons resolve 0% of incidents, 100% of the time.</p>
+        <ul class="sock-panel" role="list">
+          <li><button class="sock-btn" type="button" data-sock-action="comfort"><svg viewBox="0 0 48 60" aria-hidden="true"><use href="#sock-shape" fill="url(#pat-stripes)"/></svg><span>Comfort the lonely sock</span></button></li>
+          <li><button class="sock-btn" type="button" data-sock-action="dryer"><svg viewBox="0 0 48 60" aria-hidden="true"><use href="#sock-shape" fill="url(#pat-dots)"/></svg><span>Blame the dryer</span></button></li>
+          <li><button class="sock-btn" type="button" data-sock-action="summon"><svg viewBox="0 0 48 60" aria-hidden="true"><use href="#sock-shape" fill="url(#pat-argyle)"/></svg><span>Summon Gavin</span></button></li>
+          <li><button class="sock-btn" type="button" data-sock-action="sniff"><svg viewBox="0 0 48 60" aria-hidden="true"><use href="#sock-shape" fill="url(#pat-festive)"/></svg><span>Sniff test</span></button></li>
+          <li><button class="sock-btn" type="button" data-sock-action="inside-out" aria-pressed="false"><svg viewBox="0 0 48 60" aria-hidden="true"><use href="#sock-shape" fill="url(#pat-rainbow)"/></svg><span>Turn inside out</span></button></li>
+          <li><button class="sock-btn sock-btn-panic" type="button" data-sock-action="panic"><svg viewBox="0 0 48 60" aria-hidden="true"><use href="#sock-shape" fill="#d7192d"/></svg><span>Panic (calmly)</span></button></li>
+        </ul>
+        <p class="panel-counter" aria-live="off">Sock buttons pressed: <strong id="press-count">0</strong>. Socks matched as a result: <strong>0</strong>.</p>
+      </div>
+    </section>
+
     <section id="how" class="section" aria-labelledby="how-title">
       <div class="container">
-        <p class="section-kicker">Our proven three-step protocol</p>
+        <p class="section-kicker">Rescue. Pair. Repeat.</p>
         <h2 id="how-title">How it works</h2>
         <ol class="steps">
           <li>
             <span class="step-num" aria-hidden="true">1</span>
-            <h3>Report your orphaned sock</h3>
+            <h3><span class="step-word">Rescue.</span> Report your orphaned sock</h3>
             <p>Stay calm. Keep the remaining sock warm and do not let it out of your sight.</p>
           </li>
           <li>
             <span class="step-num" aria-hidden="true">2</span>
-            <h3>Gavin assesses the crime scene</h3>
+            <h3><span class="step-word">Pair.</span> Gavin assesses the crime scene</h3>
             <p>Usually a laundry basket. Occasionally the gap behind the radiator. Tape may be involved.</p>
           </li>
           <li>
             <span class="step-num" aria-hidden="true">3</span>
-            <h3>Reunification or a dignified send-off</h3>
+            <h3><span class="step-word">Repeat.</span> Reunification or a dignified send-off</h3>
             <p>Most socks come home. For those that don't, we offer a short, tasteful ceremony.</p>
           </li>
         </ol>
+        <div class="coverage">
+          <p class="coverage-title">We come to you:</p>
+          <ul>
+            <li>Homes</li><li>Apartments</li><li>Dorms</li><li>Anywhere!</li>
+          </ul>
+          <p class="coverage-note">Gavin's van is fictional, so travel times may vary.</p>
+        </div>
       </div>
     </section>
 
@@ -118,7 +175,7 @@
               <li>Standard visual inspection</li>
               <li>Thumbs up on completion</li>
             </ul>
-            <button class="btn btn-outline" type="button" data-notify>Select Basic</button>
+            <button class="btn btn-outline" type="button" data-notify="basic">Select Basic</button>
           </article>
           <article class="tier tier-featured">
             <p class="tier-flag">Most panicked</p>
@@ -129,7 +186,7 @@
               <li>Emotional support for the remaining sock</li>
               <li>Follow-up phone call (imaginary)</li>
             </ul>
-            <button class="btn btn-emergency" type="button" data-notify>Select Priority</button>
+            <button class="btn btn-emergency" type="button" data-notify="priority">Select Priority</button>
           </article>
           <article class="tier">
             <h3>Platinum Sole Mate</h3>
@@ -139,7 +196,7 @@
               <li>Blacklight inspection of the dryer</li>
               <li>Framed reunification certificate</li>
             </ul>
-            <button class="btn btn-outline" type="button" data-notify>Select Platinum</button>
+            <button class="btn btn-outline" type="button" data-notify="platinum">Select Platinum</button>
           </article>
           <article class="tier">
             <h3>Enterprise / Corporate Hosiery</h3>
@@ -149,7 +206,7 @@
               <li>Quarterly sock audits</li>
               <li>Call us. Gavin will be thrilled.</li>
             </ul>
-            <button class="btn btn-outline" type="button" data-notify>Contact sales</button>
+            <button class="btn btn-outline" type="button" data-notify="enterprise">Contact sales</button>
           </article>
         </div>
         <p class="fine-print">No payment is collected, ever. Lint balls are non-refundable.</p>
@@ -179,7 +236,7 @@
 
     <section id="gavin" class="section section-alt" aria-labelledby="gavin-title">
       <div class="container gavin-inner">
-        <img src="/images/gavin.svg" alt="Cartoon silhouette of Gavin" width="260" height="260" loading="lazy">
+        <button class="poke-gavin" type="button" id="poke-gavin" aria-label="Poke Gavin"><img src="/images/gavin.svg" alt="Cartoon silhouette of Gavin" width="260" height="260" loading="lazy"></button>
         <div>
           <p class="section-kicker">Founder, CEO, entire workforce</p>
           <h2 id="gavin-title">Meet Gavin</h2>
@@ -211,6 +268,10 @@
             <summary>Can I pay with a real card?</summary>
             <p>No. There are no card fields, no checkout, and nothing to buy. Please keep your lint.</p>
           </details>
+          <details>
+            <summary>I found a sock lying around on this page. What do I do?</summary>
+            <p>Find its partner and click (or tap) both. Gavin will take it from there. Beware the black sock and the nearly-black sock. They are not a pair. They know what they did.</p>
+          </details>
           <details open>
             <summary>Is this real?</summary>
             <p>It's a joke. Please don't send socks. Gavin's Emergency Sock Matching Service is a parody. It is not a real business. No socks will be matched.</p>
@@ -222,7 +283,7 @@
     <section id="hotline" class="section hotline" aria-labelledby="hotline-title">
       <div class="container hotline-inner">
         <div>
-          <p class="section-kicker">Sock emergency hotline</p>
+          <p class="section-kicker">Sock emergencies answered!</p>
           <h2 id="hotline-title">Report a sock emergency</h2>
           <div class="hotline-number" role="img" aria-label="Hotline 1-555-SOCK-SOS. This is a fictional number; please do not dial it.">
             <span class="hn-label" aria-hidden="true">Hotline</span>
@@ -267,6 +328,7 @@
     <div class="container">
       <p class="disclaimer"><strong>Parody disclaimer:</strong> Gavin's Emergency Sock Matching Service is a parody. It is not a real business. No socks will be matched. Not affiliated with any real emergency service.</p>
       <p class="privacy">Privacy: this site uses no cookies, no analytics, and no trackers. The report form sends nothing.</p>
+      <p class="footer-links">Careers: we are not hiring, there is one Gavin. · Terms: socks go on feet. · Sitemap: it's one page.</p>
       <p class="copyright">© <span id="year">2026</span> Gavin's Emergency Sock Matching Service. All socks reserved.</p>
     </div>
   </footer>
@@ -276,5 +338,23 @@
     <p>(He hasn't.) This is a parody site. Nothing was purchased and nothing was sent.</p>
     <form method="dialog"><button class="btn btn-emergency" type="submit">Understood</button></form>
   </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="game-hud" id="game-hud" hidden>
+    <span id="game-status">Pairs reunited: 0</span>
+    <button type="button" class="hud-btn" id="game-reset">Reset socks</button>
+  </div>
+
+  <dialog id="win-dialog" class="win-dialog" aria-labelledby="win-title">
+    <p class="section-kicker">Case closed</p>
+    <h2 id="win-title">Every sock is home.</h2>
+    <p id="win-text">Gavin is weeping openly. You have been awarded the Order of the Matching Pair (honorary, non-transferable, not real).</p>
+    <div class="win-actions">
+      <button class="btn btn-emergency btn-sockicon" type="button" id="win-again">Scatter them again</button>
+      <form method="dialog"><button class="btn btn-outline" type="submit">Bask in glory</button></form>
+    </div>
+  </dialog>
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
 </body>
 </html>
